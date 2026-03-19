@@ -6,28 +6,127 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<meta name="google-site-verification" content="M7vug9Nc1tNSyYQYSEXODu2oIwvEFyJkViX1kiObnyA" />
+
 <style>
-body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; color:white; }
-.navbar { display:flex; justify-content:space-between; align-items:center; padding:15px 25px; background:#111; border-bottom:2px solid #222; position:fixed; width:100%; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.5);}
-.logo img { height:50px; }
-.nav-links a { color:#ccc; margin-left:15px; text-decoration:none; font-weight:500; font-size:16px; transition: color 0.3s; }
-.nav-links a:hover { color:#ff3333; }
-.hero { text-align:center; padding:120px 20px 80px; background:linear-gradient(to bottom,#0a0a0a,#1a0000);}
-.hero h1 { font-size:60px; margin:0; color:#ff3333; }
-.hero p { color:#bbb; font-size:22px; max-width:700px; margin:20px auto 0; }
-.block { max-width:900px; margin:auto; padding:80px 20px; border-top:1px solid #222; }
-.block h2 { font-size:45px; margin-bottom:20px; color:#ff5555; }
-.block p { font-size:18px; line-height:1.8; color:#bbb; margin-bottom:20px; }
-.member { background:#111; padding:25px; border-radius:15px; margin-bottom:30px; box-shadow:0 0 20px rgba(255,0,0,0.2); }
-.member strong { font-size:22px; color:red; }
-/* RESPONSYWNOŚĆ */
-@media (max-width:1024px) { .hero h1{font-size:50px;} .hero p{font-size:20px;} .nav-links a{font-size:14px;margin-left:12px;} }
-@media (max-width:768px) { .hero h1{font-size:45px;} .hero p{font-size:18px;} .navbar{flex-direction:column;padding:10px 20px;} .nav-links{margin-top:10px; display:flex; flex-wrap:wrap; justify-content:center;} }
-@media (max-width:480px) { .hero h1{font-size:35px;} .hero p{font-size:16px;} .nav-links a{margin:8px;} }
+body {
+    margin:0;
+    font-family:'Space Grotesk', sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#111;
+    border-bottom:2px solid #222;
+    position:fixed;
+    width:100%;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo img {
+    height:50px;
+}
+
+.nav-links a {
+    color:#ccc;
+    margin-left:25px;
+    text-decoration:none;
+    font-weight:500;
+    font-size:16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color:#ff3333;
+}
+
+/* --- HERO --- */
+.hero {
+    text-align:center;
+    padding:120px 20px 80px; /* uwzględnia navbar */
+    background:linear-gradient(to bottom, #0a0a0a, #1a0000);
+}
+
+.hero h1 {
+    font-size:60px;
+    line-height:1;
+    margin:0;
+    color:#ff3333;
+}
+
+.hero p {
+    color:#bbb;
+    font-size:22px;
+    max-width:700px;
+    margin:20px auto 0;
+}
+
+/* --- BLOCK --- */
+.block {
+    max-width:900px;
+    margin:auto;
+    padding:80px 20px;
+    border-top:1px solid #222;
+}
+
+.block h2 {
+    font-size:45px;
+    margin-bottom:20px;
+    color:#ff5555;
+}
+
+.block p {
+    font-size:18px;
+    line-height:1.8;
+    color:#bbb;
+    margin-bottom:20px;
+}
+
+/* --- TEAM MEMBERS --- */
+.member {
+    background:#111;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 0 20px rgba(255,0,0,0.2);
+}
+
+.member strong {
+    font-size:22px;
+    color:red;
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+@media (max-width:1024px) {
+    .hero h1 { font-size:50px; }
+    .hero p { font-size:20px; }
+    .nav-links a { font-size:14px; margin-left:15px; }
+}
+
+@media (max-width:768px) {
+    .hero h1 { font-size:45px; }
+    .hero p { font-size:18px; }
+    .navbar { flex-direction:column; padding:10px 20px; }
+    .nav-links { margin-top:10px; display:flex; flex-wrap:wrap; justify-content:center; }
+}
+
+@media (max-width:480px) {
+    .hero h1 { font-size:35px; }
+    .hero p { font-size:16px; }
+    .nav-links a { font-size:14px; margin:10px; }
+}
 </style>
 </head>
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
     <div class="logo"><img src="Fox games.png" alt="Fox Games Logo"></div>
     <div class="nav-links">
@@ -38,29 +137,39 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
     </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
     <h1>About Fox Games</h1>
-    <p>Independent studio focused on horror games that immerse players in tense, atmospheric worlds.</p>
+    <p>Fox Games is an independent studio founded with a passion for horror games that immerse players in tense, atmospheric worlds. Our goal is to combine storytelling, exploration, and psychological tension to create unforgettable experiences.</p>
 </div>
 
+<!-- VISION -->
 <div class="block">
     <h2>Our Vision</h2>
-    <p>We aim to craft experiences that challenge the mind and senses, building suspense, mystery, and tension that remain with players long after gameplay ends.</p>
+    <p>We believe that games are a medium for emotion. Horror games, in particular, can evoke fear, curiosity, and excitement. At Fox Games, we aim to craft experiences that challenge the mind and the senses, building suspense, mystery, and tension that remain with players long after they finish the game.</p>
+    <p>Despite being a small team, we focus on attention to detail, from lighting and sound design to environmental storytelling, ensuring our games feel alive and immersive.</p>
 </div>
 
+<!-- TEAM -->
 <div class="block">
     <h2>Meet the Team</h2>
-    <div class="member"><strong>Antoni L.</strong><br>Founder, Programmer, Director
-        <p>Leads creative vision, gameplay systems, and narrative development.</p>
+    <div class="member">
+        <strong>Antoni L.</strong><br>
+        Founder, Programmer, Director
+        <p>Antoni leads the creative vision of Fox Games, designing gameplay systems and overseeing the narrative and technical development. He ensures that the studio’s horror experiences are both engaging and terrifying.</p>
     </div>
-    <div class="member"><strong>Szymon R.</strong><br>Co-Director, Programmer
-        <p>Focuses on game mechanics, optimization, and technical problem-solving.</p>
+    <div class="member">
+        <strong>Szymon R.</strong><br>
+        Co-Director, Programmer
+        <p>Szymon focuses on implementing game mechanics, optimization, and technical problem-solving. He collaborates closely with Antoni to ensure every aspect of the game delivers the intended experience.</p>
     </div>
+    <p>We are both 12 years old and passionately working on our first horror project, dedicated to pushing the boundaries of what indie horror games can achieve.</p>
 </div>
 
+<!-- COMMITMENT -->
 <div class="block">
     <h2>Our Commitment</h2>
-    <p>Creating high-quality, story-driven horror games that leave lasting impressions.</p>
+    <p>Fox Games is committed to creating high-quality, story-driven horror games. We take pride in building immersive worlds where players feel tension, curiosity, and excitement. Each project is a step toward crafting experiences that resonate with players around the world.</p>
 </div>
 
 </body>
