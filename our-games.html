@@ -9,35 +9,143 @@
 <meta name="google-site-verification" content="M7vug9Nc1tNSyYQYSEXODu2oIwvEFyJkViX1kiObnyA" />
 
 <style>
-body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; color:white; }
-.navbar { display:flex; justify-content:space-between; align-items:center; padding:25px 50px; border-bottom:1px solid #222; position:fixed; width:100%; z-index:100;}
-.navbar a { color:#aaa; margin-left:20px; text-decoration:none; font-weight:500; font-size:16px; }
-.navbar a:hover { color:white; }
-.logo img { height:70px; }
+body {
+    margin:0;
+    font-family:'Space Grotesk', sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
 
-.hero { text-align:center; padding:100px 20px; background:linear-gradient(to bottom, #0a0a0a, #1a0000);}
-.hero h1 { font-size:60px; line-height:1; margin:0; color:#ff3333; }
-.hero p { color:#bbb; font-size:22px; max-width:700px; margin-top:0; }
+/* --- NAVBAR --- */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#111; /* pełne tło */
+    border-bottom:2px solid #222;
+    position:fixed;
+    width:100%;
+    z-index:100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
 
-.game-card { max-width:900px; margin:auto; padding:60px 20px; border-top:1px solid #222; text-align:center; background:#111; border-radius:15px; box-shadow:0 0 30px rgba(255,0,0,0.2); margin-bottom:60px; }
-.game-card img { max-width:400px; width:100%; height:auto; margin-bottom:30px; }
-.game-card h2 { font-size:45px; margin-bottom:20px; }
-.game-card p { font-size:18px; line-height:1.8; color:#ccc; }
+.logo img {
+    height:50px;
+}
 
-.block { max-width:900px; margin:auto; padding:60px 20px; border-top:1px solid #222; }
-.block h3 { font-size:28px; margin-bottom:15px; color:#ff5555; }
-.block p { font-size:17px; line-height:1.8; color:#bbb; }
+.nav-links a {
+    color:#ccc;
+    margin-left:25px;
+    text-decoration:none;
+    font-weight:500;
+    font-size:16px;
+    transition: color 0.3s;
+}
 
-@media (max-width:1024px) { .hero h1 { font-size:50px; } .hero p { font-size:20px; } .navbar a { font-size:14px; } }
-@media (max-width:768px) { .hero h1 { font-size:45px; } .hero p { font-size:18px; } .navbar { flex-direction:column; padding:15px; } .navbar div { margin-top:10px; } }
-@media (max-width:480px) { .hero h1 { font-size:35px; } .hero p { font-size:16px; } }
+.nav-links a:hover {
+    color:#ff3333;
+}
+
+/* --- HERO --- */
+.hero {
+    text-align:center;
+    padding:120px 20px 80px; /* uwzględnia navbar */
+    background:linear-gradient(to bottom, #0a0a0a, #1a0000);
+}
+
+.hero h1 {
+    font-size:60px;
+    line-height:1;
+    margin:0;
+    color:#ff3333;
+}
+
+.hero p {
+    color:#bbb;
+    font-size:22px;
+    max-width:700px;
+    margin:20px auto 0;
+}
+
+/* --- GAME CARD --- */
+.game-card {
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+    border-top:1px solid #222;
+    text-align:center;
+    background:#111;
+    border-radius:15px;
+    box-shadow:0 0 30px rgba(255,0,0,0.2);
+    margin-bottom:60px;
+}
+
+.game-card img {
+    max-width:400px;
+    width:100%;
+    height:auto;
+    margin-bottom:30px;
+}
+
+.game-card h2 {
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.game-card p {
+    font-size:18px;
+    line-height:1.8;
+    color:#ccc;
+}
+
+/* --- BLOCK SECTIONS --- */
+.block {
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+    border-top:1px solid #222;
+}
+
+.block h3 {
+    font-size:28px;
+    margin-bottom:15px;
+    color:#ff5555;
+}
+
+.block p {
+    font-size:17px;
+    line-height:1.8;
+    color:#bbb;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width:1024px) {
+    .hero h1 { font-size:50px; }
+    .hero p { font-size:20px; }
+    .nav-links a { font-size:14px; margin-left:15px; }
+}
+
+@media (max-width:768px) {
+    .hero h1 { font-size:45px; }
+    .hero p { font-size:18px; }
+    .navbar { flex-direction:column; padding:10px 20px; }
+    .nav-links { margin-top:10px; display:flex; flex-wrap:wrap; justify-content:center; }
+}
+
+@media (max-width:480px) {
+    .hero h1 { font-size:35px; }
+    .hero p { font-size:16px; }
+    .nav-links a { font-size:14px; margin:10px; }
+}
 </style>
 </head>
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
     <div class="logo"><img src="Fox games.png" alt="Fox Games Logo"></div>
-    <div>
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="our-games.html">Our Games</a>
         <a href="about.html">About</a>
@@ -45,11 +153,13 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
     </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
     <h1>Our Games</h1>
     <p>Explore our current and upcoming projects. We focus on horror experiences with deep stories, immersive environments, and psychological tension. Each game is crafted to stay in your mind long after playing.</p>
 </div>
 
+<!-- GAME CARD -->
 <div class="game-card">
     <img src="gra.png" alt="HOME SWEET HOME 1 Logo">
     <h2>HOME SWEET HOME 1</h2>
