@@ -18,17 +18,23 @@ body {
     color:white;
 }
 
-/* NAVBAR */
+/* NAVBAR – mocna czerń i poprawne wyśrodkowanie elementów */
 .navbar {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:25px 50px;
-    background:#000000;
+    padding:20px 50px;
+    background:#000000;  /* mocny czarny pasek */
     border-bottom:1px solid #111;
-    position:fixed;
+    position:fixed;       /* navbar zawsze na górze */
+    top:0;
     width:100%;
     z-index:100;
+    box-sizing:border-box;
+}
+
+.navbar .logo img {
+    height:60px;          /* dopasowane logo, nie za duże */
 }
 
 .navbar a {
@@ -40,18 +46,15 @@ body {
 
 .navbar a:hover { color:white; }
 
-.logo img { height:80px; }
-
-/* HERO */
+/* HERO – wyśrodkowanie i odległość od navbar */
 .hero {
     text-align:center;
-    padding:120px 20px;
+    padding:140px 20px 100px 20px; /* górny padding uwzględnia wysokość navbar */
     background:linear-gradient(to bottom, #0a0a0a, #1a0000);
 }
 
 .hero h1 {
     font-size:70px;
-    line-height:1;
     margin:0;
     color:#ff3333;
 }
@@ -63,7 +66,6 @@ body {
     margin:20px auto 0 auto;
     text-align:center;
 }
-
 /* CONTACT FORM BLOCK */
 .contact-block {
     max-width:700px;
