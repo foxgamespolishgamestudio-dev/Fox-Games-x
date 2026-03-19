@@ -3,82 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <title>Fox Games - Polish Games Studio</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
-
-<!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin:0;
-    font-family:'Space Grotesk', sans-serif;
-    background:#0a0a0a;
-    color:white;
-}
-
-/* NAVBAR */
-.navbar {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 50px;
-    border-bottom:1px solid #222;
-}
-
-.navbar a {
-    color:#aaa;
-    margin-left:30px;
-    text-decoration:none;
-    font-weight:500;
-}
-
+body { margin:0; font-family:'Space Grotesk', sans-serif; background:#000000; color:white; }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:25px 50px; border-bottom:1px solid #222; position:fixed; width:100%; z-index:100;}
+.navbar a { color:#aaa; margin-left:20px; text-decoration:none; font-weight:500; font-size:16px; }
 .navbar a:hover { color:white; }
-.logo img { height:80px; }
+.logo img { height:70px; }
 
-/* HERO SECTION */
-.hero {
-    text-align:center;
-    padding:120px 20px;
-    background:linear-gradient(to bottom, #0a0a0a, #1a0000);
-}
+.hero { text-align:center; padding:120px 20px; background:linear-gradient(to bottom, #0a0a0a, #1a0000);}
+.hero h1 { font-size:60px; line-height:1; margin:0; color:#ff3333; }
+.hero p { color:#bbb; font-size:22px; max-width:700px; margin-top:0; } /* usuwa efekt przechylonego napisu */
 
-.hero h1 {
-    font-size:80px;
-    line-height:1;
-    margin:0;
-    color:#ff3333;
-}
+.block { max-width:900px; margin:auto; padding:80px 20px; border-top:1px solid #222;}
+.block h2 { font-size:45px; margin-bottom:20px; color:#ff5555; }
+.block p { font-size:18px; line-height:1.8; color:#bbb; margin-bottom:20px; }
 
-.hero p {
-    color:#bbb;
-    font-size:22px;
-    max-width:700px;
-    margin-top:20px;
-}
+.highlight { background:#111; border-radius:15px; padding:40px 30px; box-shadow:0 0 30px rgba(255,0,0,0.2); margin-bottom:60px; text-align:center; }
+.highlight img { max-width:400px; width:100%; height:auto; margin-bottom:30px; }
+.highlight h3 { font-size:32px; margin-bottom:15px; color:red; }
 
-/* Media Queries */
-@media (max-width:1024px) {
-    .hero h1 { font-size:60px; }
-    .hero p { font-size:20px; }
-}
-@media (max-width:768px) {
-    .hero h1 { font-size:50px; }
-    .hero p { font-size:18px; }
-    .navbar a { margin-left:15px; font-size:14px; }
-    .logo img { height:60px; }
-}
-@media (max-width:480px) {
-    .hero h1 { font-size:40px; }
-    .hero p { font-size:16px; }
-    .navbar { flex-direction:column; padding:15px; }
-    .navbar div { margin-top:10px; }
-}
-
-img { max-width:100%; height:auto; }
-
+/* Responsywność */
+@media (max-width:1024px) { .hero h1 { font-size:50px; } .hero p { font-size:20px; } .navbar a { font-size:14px; } }
+@media (max-width:768px) { .hero h1 { font-size:45px; } .hero p { font-size:18px; } .navbar { flex-direction:column; padding:15px; } .navbar div { margin-top:10px; } }
+@media (max-width:480px) { .hero h1 { font-size:35px; } .hero p { font-size:16px; } }
 </style>
 </head>
 <body>
@@ -98,14 +50,12 @@ img { max-width:100%; height:auto; }
     <p>We are an independent horror game studio passionate about immersive storytelling, tense atmospheres, and unforgettable experiences. Every project we create is designed to keep players on the edge of their seat.</p>
 </div>
 
-<!-- Mission Block -->
 <div class="block">
     <h2>Our Mission</h2>
     <p>At Fox Games, we aim to redefine horror experiences for players of all ages. We combine exploration, psychological tension, and rich narrative elements to craft worlds that feel alive, mysterious, and terrifyingly immersive.</p>
     <p>Even as a small studio, we focus on detail — every room, shadow, and sound is carefully designed to provoke curiosity and fear. Our mission is to leave a lasting impression on players, making every game memorable and unique.</p>
 </div>
 
-<!-- Featured Game -->
 <div class="highlight">
     <img src="gra.png" alt="HOME SWEET HOME 1 Logo">
     <h3>Featured Game: HOME SWEET HOME 1</h3>
@@ -113,7 +63,6 @@ img { max-width:100%; height:auto; }
     <p><strong>Status:</strong> In Development</p>
 </div>
 
-<!-- Vision Block -->
 <div class="block">
     <h2>Why We Create Horror</h2>
     <p>Horror is more than jump scares — it’s about atmosphere, storytelling, and psychological tension. Our games challenge the mind, evoke curiosity, and provoke emotions that linger long after the gameplay ends.</p>
