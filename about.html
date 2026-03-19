@@ -3,117 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <title>Fox Games - About</title>
-    
-<meta name="google-site-verification" content="M7vug9Nc1tNSyYQYSEXODu2oIwvEFyJkViX1kiObnyA" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin:0;
-    font-family:'Space Grotesk', sans-serif;
-    background:#0a0a0a;
-    color:white;
-}
-
-/* NAVBAR */
-.navbar {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 50px;
-    border-bottom:1px solid #222;
-    background:#000000;
-}
-
-.navbar a {
-    color:#aaa;
-    margin-left:30px;
-    text-decoration:none;
-    font-weight:500;
-}
-
+body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; color:white; }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:25px 50px; border-bottom:1px solid #222; position:fixed; width:100%; z-index:100;}
+.navbar a { color:#aaa; margin-left:30px; text-decoration:none; font-weight:500;}
 .navbar a:hover { color:white; }
-
 .logo img { height:80px; }
 
-/* HERO */
-.hero {
-    text-align:center;
-    padding:80px 20px;
-    background:linear-gradient(to bottom, #0a0a0a, #1a0000);
-}
+.hero { text-align:center; padding:80px 20px; background:linear-gradient(to bottom, #0a0a0a, #1a0000);}
+.hero h1 { font-size:70px; line-height:1; margin:0; color:#ff3333;}
+.hero p { color:#bbb; font-size:22px; max-width:700px; margin-top:20px;}
 
-.hero h1 {
-    font-size:70px;
-    line-height:1;
-    margin:0;
-    color:#ff3333;
-}
+.block { max-width:900px; margin:auto; padding:60px 20px; border-top:1px solid #222;}
+.block h2 { font-size:40px; margin-bottom:20px; color:#ff5555;}
+.block p { font-size:18px; line-height:1.8; color:#bbb; margin-bottom:20px;}
 
-.hero p {
-    color:#bbb;
-    font-size:22px;
-    max-width:700px;
-    margin-top:20px;
-}
+.member { background:#111; padding:25px; border-radius:15px; margin-bottom:30px; box-shadow:0 0 20px rgba(255,0,0,0.2);}
+.member strong { font-size:22px; color:red; }
 
-/* TEAM BLOCKS */
-.block {
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
-    border-top:1px solid #222;
-}
+img { max-width:100%; height:auto; }
 
-.block h2 {
-    font-size:40px;
-    margin-bottom:20px;
-    color:#ff5555;
+/* Responsywność */
+@media (max-width:1024px) {
+    .hero h1 { font-size:60px; } .hero p { font-size:20px; } .block h2 { font-size:36px; } .member strong { font-size:20px; }
 }
-
-.member {
-    background:#111;
-    padding:25px;
-    border-radius:15px;
-    margin-bottom:30px;
-    box-shadow:0 0 20px rgba(255,0,0,0.2);
+@media (max-width:768px) {
+    .hero h1 { font-size:50px; } .hero p { font-size:18px; } .navbar a { margin-left:15px; font-size:14px;} .logo img { height:60px; }
 }
-
-.member strong {
-    font-size:22px;
-    color:red;
+@media (max-width:480px) {
+    .hero h1 { font-size:40px; } .hero p { font-size:16px; } .navbar { flex-direction:column; padding:15px;} .navbar div { margin-top:10px;}
 }
-
-.block p {
-    font-size:18px;
-    line-height:1.8;
-    color:#bbb;
-    margin-top:10px;
-}
-
-@media (max-width: 1024px) {
-    .hero h1 { font-size:60px; }
-    .hero p { font-size:20px; }
-}
-
-@media (max-width: 768px) {
-    .hero h1 { font-size:50px; }
-    .hero p { font-size:18px; }
-    .navbar a { margin-left:15px; font-size:14px; }
-    .logo img { height:60px; }
-}
-
-@media (max-width: 480px) {
-    .hero h1 { font-size:40px; }
-    .hero p { font-size:16px; }
-    .navbar { flex-direction:column; padding:15px; }
-    .navbar div { margin-top:10px; }
-}
-    
 </style>
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 
 <div class="navbar">
@@ -122,6 +50,7 @@ body {
         <a href="index.html">Home</a>
         <a href="our-games.html">Our Games</a>
         <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </div>
 </div>
 
