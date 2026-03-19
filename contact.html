@@ -4,90 +4,31 @@
 <meta charset="UTF-8">
 <title>Fox Games – Contact</title>
 
-<!-- Google Site Verification -->
 <meta name="google-site-verification" content="M7vug9Nc1tNSyYQYSEXODu2oIwvEFyJkViX1kiObnyA" />
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
 
-<!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin:0;
-    font-family:'Space Grotesk', sans-serif;
-    background:#0a0a0a;
-    color:white;
-}
-
-/* NAVBAR – mocna czerń i poprawne wyśrodkowanie elementów */
-.navbar {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
-    background:#000000;  /* mocny czarny pasek */
-    border-bottom:1px solid #111;
-    position:fixed;       /* navbar zawsze na górze */
-    top:0;
-    width:100%;
-    z-index:100;
-    box-sizing:border-box;
-}
-
-.navbar .logo img {
-    height:60px;          /* dopasowane logo, nie za duże */
-}
-
-.navbar a {
-    color:#aaa;
-    margin-left:30px;
-    text-decoration:none;
-    font-weight:500;
-}
-
+body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; color:white; }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#000; border-bottom:1px solid #111; position:fixed; top:0; width:100%; z-index:100; box-sizing:border-box; }
+.navbar .logo img { height:80px; }
+.navbar a { color:#aaa; margin-left:30px; text-decoration:none; font-weight:500; }
 .navbar a:hover { color:white; }
 
-/* HERO – wyśrodkowanie i odległość od navbar */
-.hero {
-    text-align:center;
-    padding:140px 20px 100px 20px; /* górny padding uwzględnia wysokość navbar */
-    background:linear-gradient(to bottom, #0a0a0a, #1a0000);
-}
+.hero { text-align:center; padding:140px 20px 40px 20px; background:linear-gradient(to bottom, #0a0a0a, #1a0000); }
+.hero h1 { font-size:70px; margin:0; color:#ff3333; }
+.hero p { color:#bbb; font-size:22px; max-width:700px; margin:20px auto 0 auto; text-align:center; }
 
-.hero h1 {
-    font-size:70px;
-    margin:0;
-    color:#ff3333;
-}
-
-.hero p {
-    color:#bbb;
-    font-size:22px;
-    max-width:700px;
-    margin:20px auto 0 auto;
-    text-align:center;
-}
-/* CONTACT FORM BLOCK */
 .contact-block {
-    max-width:700px;
+    max-width:600px;
     margin:auto;
-    padding:80px 20px;
+    padding:50px 20px;
     background:#111;
     border-radius:15px;
     box-shadow:0 0 30px rgba(255,0,0,0.2);
     margin-top:60px;
-}
-
-.contact-block h2 {
-    font-size:40px;
-    margin-bottom:20px;
-    color:#ff5555;
-}
-
-.contact-block p {
-    font-size:18px;
-    line-height:1.8;
-    color:#bbb;
-    margin-bottom:30px;
 }
 
 .contact-block form input,
@@ -102,10 +43,7 @@ body {
     font-size:16px;
 }
 
-.contact-block form textarea {
-    resize:vertical;
-    min-height:120px;
-}
+.contact-block form textarea { min-height:120px; resize:vertical; }
 
 .contact-block form button {
     padding:15px 30px;
@@ -118,14 +56,18 @@ body {
     cursor:pointer;
 }
 
-.contact-block form button:hover {
-    background:#ff5555;
+.contact-block form button:hover { background:#ff5555; }
+
+@media (max-width:768px) {
+    .hero h1 { font-size:50px; }
+    .hero p { font-size:18px; }
+    .navbar a { margin-left:15px; font-size:14px; }
+    .navbar .logo img { height:60px; }
 }
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
     <div class="logo"><img src="Fox games.png" alt="Fox Games Logo"></div>
     <div>
@@ -136,18 +78,14 @@ body {
     </div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
     <h1>Contact Us</h1>
-    <p>If you want to reach Fox Games, have questions, or want to collaborate, feel free to contact us using the form below. We love hearing from our community and fellow developers!</p>
+    <p>If you want to reach Fox Games, contact us below!</p>
 </div>
 
-<!-- CONTACT FORM -->
 <div class="contact-block">
     <h2>Get in Touch</h2>
     <p>Email: <strong>fox.games.polish.game.studio@gmail.com</strong></p>
-
-    <!-- Bezpieczny formularz Netlify -->
     <form name="contact" method="POST" data-netlify="true">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
