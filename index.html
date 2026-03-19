@@ -5,39 +5,138 @@
 <title>Fox Games - Polish Games Studio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<meta name="google-site-verification" content="M7vug9Nc1tNSyYQYSEXODu2oIwvEFyJkViX1kiObnyA" />
+
 <style>
-body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; color:white; }
+body {
+    margin:0;
+    font-family:'Space Grotesk', sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
 
-/* NAVBAR */
-.navbar { display:flex; justify-content:space-between; align-items:center; padding:15px 25px; background:#111; border-bottom:2px solid #222; position:fixed; width:100%; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.5);}
-.logo img { height:50px; }
-.nav-links a { color:#ccc; margin-left:15px; text-decoration:none; font-weight:500; font-size:16px; transition: color 0.3s; }
-.nav-links a:hover { color:#ff3333; }
+/* --- NAVBAR --- */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#111; /* pełne tło */
+    border-bottom:2px solid #222;
+    position:fixed;
+    width:100%;
+    z-index:100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
 
-/* HERO */
-.hero { text-align:center; padding:120px 20px 80px; background:linear-gradient(to bottom,#0a0a0a,#1a0000); }
-.hero h1 { font-size:60px; line-height:1; margin:0; color:#ff3333; }
-.hero p { color:#bbb; font-size:22px; max-width:700px; margin:20px auto 0; }
+.logo img {
+    height:50px;
+}
 
-/* BLOCKS */
-.block { max-width:900px; margin:auto; padding:80px 20px; border-top:1px solid #222; }
-.block h2 { font-size:45px; margin-bottom:20px; color:#ff5555; }
-.block p { font-size:18px; line-height:1.8; color:#bbb; margin-bottom:20px; }
+.nav-links a {
+    color:#ccc;
+    margin-left:25px;
+    text-decoration:none;
+    font-weight:500;
+    font-size:16px;
+    transition: color 0.3s;
+}
 
-/* HIGHLIGHT */
-.highlight { background:#111; border-radius:15px; padding:40px 30px; box-shadow:0 0 30px rgba(255,0,0,0.2); margin-bottom:60px; text-align:center; }
-.highlight img { max-width:400px; width:100%; height:auto; margin-bottom:30px; }
-.highlight h3 { font-size:32px; margin-bottom:15px; color:red; }
+.nav-links a:hover {
+    color:#ff3333;
+}
 
-/* RESPONSYWNOŚĆ */
-@media (max-width:1024px) { .hero h1{font-size:50px;} .hero p{font-size:20px;} .nav-links a{font-size:14px;margin-left:12px;} }
-@media (max-width:768px) { .hero h1{font-size:45px;} .hero p{font-size:18px;} .navbar{flex-direction:column;padding:10px 20px;} .nav-links{margin-top:10px; display:flex; flex-wrap:wrap; justify-content:center;} }
-@media (max-width:480px) { .hero h1{font-size:35px;} .hero p{font-size:16px;} .nav-links a{margin:8px;} }
+/* --- HERO --- */
+.hero {
+    text-align:center;
+    padding:120px 20px 80px; /* uwzględnia navbar */
+    background:linear-gradient(to bottom, #0a0a0a, #1a0000);
+}
+
+.hero h1 {
+    font-size:60px;
+    line-height:1;
+    margin:0;
+    color:#ff3333;
+}
+
+.hero p {
+    color:#bbb;
+    font-size:22px;
+    max-width:700px;
+    margin:20px auto 0;
+}
+
+/* --- BLOCK --- */
+.block {
+    max-width:900px;
+    margin:auto;
+    padding:80px 20px;
+    border-top:1px solid #222;
+}
+
+.block h2 {
+    font-size:45px;
+    margin-bottom:20px;
+    color:#ff5555;
+}
+
+.block p {
+    font-size:18px;
+    line-height:1.8;
+    color:#bbb;
+    margin-bottom:20px;
+}
+
+/* --- HIGHLIGHTED GAME --- */
+.highlight {
+    background:#111;
+    border-radius:15px;
+    padding:40px 30px;
+    box-shadow:0 0 30px rgba(255,0,0,0.2);
+    margin-bottom:60px;
+    text-align:center;
+}
+
+.highlight img {
+    max-width:400px;
+    width:100%;
+    height:auto;
+    margin-bottom:30px;
+}
+
+.highlight h3 {
+    font-size:32px;
+    margin-bottom:15px;
+    color:red;
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+@media (max-width:1024px) {
+    .hero h1 { font-size:50px; }
+    .hero p { font-size:20px; }
+    .nav-links a { font-size:14px; margin-left:15px; }
+}
+
+@media (max-width:768px) {
+    .hero h1 { font-size:45px; }
+    .hero p { font-size:18px; }
+    .navbar { flex-direction:column; padding:10px 20px; }
+    .nav-links { margin-top:10px; display:flex; flex-wrap:wrap; justify-content:center; }
+}
+
+@media (max-width:480px) {
+    .hero h1 { font-size:35px; }
+    .hero p { font-size:16px; }
+    .nav-links a { font-size:14px; margin:10px; }
+}
 </style>
 </head>
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
     <div class="logo"><img src="Fox games.png" alt="Fox Games Logo"></div>
     <div class="nav-links">
@@ -48,17 +147,20 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
     </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
     <h1>FOX GAMES</h1>
     <p>We are an independent horror game studio passionate about immersive storytelling, tense atmospheres, and unforgettable experiences. Every project we create is designed to keep players on the edge of their seat.</p>
 </div>
 
+<!-- MISSION -->
 <div class="block">
     <h2>Our Mission</h2>
     <p>At Fox Games, we aim to redefine horror experiences for players of all ages. We combine exploration, psychological tension, and rich narrative elements to craft worlds that feel alive, mysterious, and terrifyingly immersive.</p>
     <p>Even as a small studio, we focus on detail — every room, shadow, and sound is carefully designed to provoke curiosity and fear. Our mission is to leave a lasting impression on players, making every game memorable and unique.</p>
 </div>
 
+<!-- FEATURED GAME -->
 <div class="highlight">
     <img src="gra.png" alt="HOME SWEET HOME 1 Logo">
     <h3>Featured Game: HOME SWEET HOME 1</h3>
@@ -66,6 +168,7 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
     <p><strong>Status:</strong> In Development</p>
 </div>
 
+<!-- WHY HORROR -->
 <div class="block">
     <h2>Why We Create Horror</h2>
     <p>Horror is more than jump scares — it’s about atmosphere, storytelling, and psychological tension. Our games challenge the mind, evoke curiosity, and provoke emotions that linger long after the gameplay ends.</p>
