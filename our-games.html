@@ -2,108 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Fox Games - Our Games</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<title>Fox Games – Our Games</title>
+
 <meta name="google-site-verification" content="M7vug9Nc1tNSyYQYSEXODu2oIwvEFyJkViX1kiObnyA" />
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
-body {
-    margin:0;
-    font-family:'Space Grotesk', sans-serif;
-    background:#0a0a0a;
-    color:white;
-}
-
-/* NAVBAR */
-.navbar {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 50px;
-    border-bottom:1px solid #222;
-}
-
-.navbar a {
-    color:#aaa;
-    margin-left:30px;
-    text-decoration:none;
-    font-weight:500;
-}
-
+body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; color:white; }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#000; border-bottom:1px solid #111; position:fixed; top:0; width:100%; z-index:100; box-sizing:border-box; }
+.navbar .logo img { height:80px; }
+.navbar a { color:#aaa; margin-left:30px; text-decoration:none; font-weight:500; }
 .navbar a:hover { color:white; }
 
-.logo img { height:80px; }
+.hero { text-align:center; padding:140px 20px 100px 20px; background:linear-gradient(to bottom, #0a0a0a, #1a0000); }
+.hero h1 { font-size:70px; margin:0; color:#ff3333; }
+.hero p { color:#bbb; font-size:22px; max-width:700px; margin:20px auto 0 auto; text-align:center; }
 
-/* HERO */
-.hero {
-    text-align:center;
-    padding:80px 20px;
-    background:linear-gradient(to bottom, #0a0a0a, #1a0000);
-}
+.hero img { margin-top:40px; max-width:80%; height:auto; }
 
-.hero h1 {
-    font-size:70px;
-    line-height:1;
-    margin:0;
-    color:#ff3333;
-}
-
-.hero p {
-    color:#bbb;
-    font-size:22px;
-    max-width:700px;
-    margin:20px auto 0 auto; /* <-- AUTO po bokach */
-    text-align:center;  
-}
-
-/* GAME CARD */
-.game-card {
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
-    border-top:1px solid #222;
-    text-align:center;
-    background:#111;
-    border-radius:15px;
-    box-shadow:0 0 30px rgba(255,0,0,0.2);
-    margin-bottom:60px;
-}
-
-.game-card img {
-    max-width:400px;
-    width:100%;
-    height:auto;
-    margin-bottom:30px;
-}
-
-.game-card h2 {
-    font-size:45px;
-    margin-bottom:20px;
-}
-
-.game-card p {
-    font-size:18px;
-    line-height:1.8;
-    color:#ccc;
-}
-
-/* BLOCKS FOR DETAILS */
-.block {
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
-    border-top:1px solid #222;
-}
-
-.block h3 {
-    font-size:28px;
-    margin-bottom:15px;
-    color:#ff5555;
-}
-
-.block p {
-    font-size:17px;
-    line-height:1.8;
-    color:#bbb;
+@media (max-width:768px) {
+    .hero h1 { font-size:50px; }
+    .hero p { font-size:18px; }
+    .navbar a { margin-left:15px; font-size:14px; }
+    .navbar .logo img { height:60px; }
 }
 </style>
 </head>
@@ -120,32 +44,9 @@ body {
 </div>
 
 <div class="hero">
-    <h1>Our Games</h1>
-    <p>Explore our current and upcoming projects. We focus on horror experiences with deep stories, immersive environments, and psychological tension. Each game is crafted to stay in your mind long after playing.</p>
-</div>
-
-<!-- GAME CARD -->
-<div class="game-card">
+    <h1>Our Game</h1>
+    <p>Our first game "HOME SWEET HOME 1" is a horror experience set in a haunted orphanage. Floors 10 to -30 are inaccessible and filled with demonic children.</p>
     <img src="gra.png" alt="HOME SWEET HOME 1 Logo">
-    <h2>HOME SWEET HOME 1</h2>
-    <p><strong>HOME SWEET HOME 1</strong> is our first major project — a psychological horror game set in a mysterious and abandoned orphanage. Players explore dark corridors, hidden rooms, and floors sealed for decades. The game mixes exploration, survival, and narrative-driven encounters.</p>
-
-    <div class="block">
-        <h3>Story & Setting</h3>
-        <p>The orphanage was once a place of care and hope, but tragedy left a mark. Children started disappearing and strange events unfolded. Floors from <strong>-10 to -30</strong> were sealed. Rumors say something sinister still lurks there. The player uncovers the dark history, piece by piece, while trying to survive encounters with children who are no longer human.</p>
-        <p>The environment itself is alive — lights flicker, whispers echo, and every room hides clues to unravel the mysteries of the orphanage. Players must solve puzzles, explore forbidden floors, and navigate psychological challenges that heighten the horror experience.</p>
-    </div>
-
-    <div class="block">
-        <h3>Gameplay & Features</h3>
-        <p>The game emphasizes exploration, survival mechanics, and story-driven gameplay. Every floor introduces new challenges, puzzles, and escalating tension. The children-demons are unpredictable, and each encounter requires careful observation and strategy.</p>
-        <p>Atmospheric sound design, dynamic lighting, and environmental storytelling combine to create a deeply immersive experience. The player’s choices and curiosity affect how much of the story is revealed and how the environment reacts, adding replayability and suspense.</p>
-    </div>
-
-    <div class="block">
-        <h3>Status</h3>
-        <p>Currently in development, <strong>HOME SWEET HOME 1</strong> is being meticulously crafted to deliver a unique psychological horror experience. Fox Games is committed to quality and immersion, ensuring players will feel both tension and awe as they explore the orphanage’s dark secrets.</p>
-    </div>
 </div>
 
 </body>
