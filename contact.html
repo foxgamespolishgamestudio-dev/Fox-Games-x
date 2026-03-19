@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fox Games - Contact</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin:0;
+    font-family:'Space Grotesk', sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 50px;
+    border-bottom:1px solid #222;
+}
+
+.navbar a {
+    color:#aaa;
+    margin-left:30px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.navbar a:hover { color:white; }
+
+.logo img { height:80px; }
+
+/* HERO */
+.hero {
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(to bottom, #0a0a0a, #1a0000);
+}
+
+.hero h1 {
+    font-size:70px;
+    line-height:1;
+    margin:0;
+    color:#ff3333;
+}
+
+.hero p {
+    color:#bbb;
+    font-size:22px;
+    max-width:700px;
+    margin-top:20px;
+}
+
+/* CONTACT FORM BLOCK */
+.contact-block {
+    max-width:700px;
+    margin:auto;
+    padding:80px 20px;
+    background:#111;
+    border-radius:15px;
+    box-shadow:0 0 30px rgba(255,0,0,0.2);
+}
+
+.contact-block h2 {
+    font-size:40px;
+    margin-bottom:20px;
+    color:#ff5555;
+}
+
+.contact-block p {
+    font-size:18px;
+    line-height:1.8;
+    color:#bbb;
+    margin-bottom:30px;
+}
+
+.contact-block form input,
+.contact-block form textarea {
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:8px;
+    background:#222;
+    color:white;
+    font-size:16px;
+}
+
+.contact-block form textarea {
+    resize:vertical;
+    min-height:120px;
+}
+
+.contact-block form button {
+    padding:15px 30px;
+    font-size:16px;
+    font-weight:600;
+    color:white;
+    background:red;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.contact-block form button:hover {
+    background:#ff5555;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo"><img src="Fox games.png" alt="Fox Games Logo"></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="our-games.html">Our Games</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Contact Us</h1>
+    <p>If you want to reach Fox Games, have questions, or want to collaborate, feel free to contact us via email or using the form below. We love hearing from our community and fellow developers!</p>
+</div>
+
+<!-- CONTACT FORM -->
+<div class="contact-block">
+    <h2>Get in Touch</h2>
+    <p>Email: <strong>fox.games.polish.game.studio@gmail.com</strong></p>
+
+    <form action="mailto:fox.games.polish.game.studio@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>
