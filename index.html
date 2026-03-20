@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <title>Fox Games - Polish Games Studio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
@@ -23,32 +24,41 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 .logo img { height:50px; }
 
 .nav-links a {
-    color:#ccc;
+    color:#aaa;
     margin-left:15px;
     text-decoration:none;
-    font-size:16px;
+    font-weight:500;
 }
-.nav-links a:hover { color:#ff3333; }
+.nav-links a:hover { color:white; }
 
 /* HERO */
-.hero { padding:120px 20px 80px; text-align:center; background:linear-gradient(#0a0a0a,#1a0000); }
-.hero h1 { font-size:60px; color:#ff3333; margin:0; }
-.hero p { max-width:700px; margin:20px auto; color:#bbb; font-size:22px; }
+.hero { text-align:center; padding:120px 20px; background:linear-gradient(to bottom,#0a0a0a,#1a0000); }
+.hero h1 { font-size:60px; margin:0; color:#ff3333; }
+.hero p { color:#bbb; font-size:22px; max-width:700px; margin:20px auto 0; }
 
-/* BLOCK */
+/* CONTENT */
 .block { max-width:900px; margin:auto; padding:80px 20px; border-top:1px solid #222; }
-.block h2 { font-size:45px; color:#ff5555; }
-.block p { font-size:18px; color:#bbb; line-height:1.8; }
+.block h2 { font-size:45px; margin-bottom:20px; color:#ff5555; }
+.block p { font-size:18px; line-height:1.8; color:#bbb; margin-bottom:20px; }
 
-/* FEATURE */
-.highlight { max-width:900px; margin:40px auto; background:#111; padding:40px; border-radius:15px; box-shadow:0 0 30px rgba(255,0,0,0.2); text-align:center; }
-.highlight img { max-width:400px; width:100%; margin-bottom:20px; }
+.highlight {
+    background:#111;
+    border-radius:15px;
+    padding:40px 30px;
+    box-shadow:0 0 30px rgba(255,0,0,0.2);
+    margin:60px auto;
+    max-width:900px;
+    text-align:center;
+}
+.highlight img { max-width:400px; width:100%; margin-bottom:30px; }
+.highlight h3 { font-size:32px; color:red; }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media(max-width:768px){
 .navbar-inner { flex-direction:column; }
 .nav-links { margin-top:10px; }
-.hero h1 { font-size:40px; }
+.hero h1 { font-size:45px; }
+.hero p { font-size:18px; }
 }
 </style>
 </head>
@@ -57,7 +67,7 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 
 <div class="navbar">
 <div class="navbar-inner">
-<div class="logo"><img src="Fox games.png"></div>
+<div class="logo"><img src="Fox games.png" alt="Fox Games Logo"></div>
 <div class="nav-links">
 <a href="index.html">Home</a>
 <a href="our-games.html">Our Games</a>
@@ -79,10 +89,16 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 </div>
 
 <div class="highlight">
-<img src="gra.png">
+<img src="gra.png" alt="HOME SWEET HOME 1 Logo">
 <h3>Featured Game: HOME SWEET HOME 1</h3>
-<p>Our first game is a psychological horror set in a dark and abandoned orphanage. Floors from -10 to -30 are sealed, hiding secrets and children who are no longer human.</p>
+<p>Our first game is a psychological horror set in a dark and abandoned orphanage. Floors from -10 to -30 are sealed, hiding secrets and children who are no longer human. Players explore, survive, and unravel the mystery that haunts the orphanage.</p>
 <p><strong>Status:</strong> In Development</p>
+</div>
+
+<div class="block">
+<h2>Why We Create Horror</h2>
+<p>Horror is more than jump scares — it’s about atmosphere, storytelling, and psychological tension. Our games challenge the mind, evoke curiosity, and provoke emotions that linger long after the gameplay ends.</p>
+<p>We aim to create immersive worlds where every sound, shadow, and encounter contributes to a larger narrative. Players are not just observers; they are part of the environment, and their choices influence how the story unfolds.</p>
 </div>
 
 </body>
