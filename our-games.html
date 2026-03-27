@@ -50,7 +50,7 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 .block h3 { font-size:28px; margin-bottom:15px; color:#ff5555; }
 .block p { font-size:17px; line-height:1.8; color:#bbb; }
 
-/* 🎬 PRZYCISK TRAILERA */
+/* BUTTON */
 .watch-btn {
     display:inline-block;
     margin-top:20px;
@@ -63,11 +63,9 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
     font-size:16px;
     font-weight:600;
 }
-.watch-btn:hover {
-    background:#ff5555;
-}
+.watch-btn:hover { background:#ff5555; }
 
-/* 🎬 POPUP */
+/* POPUP */
 .trailer-popup {
     display:none;
     position:fixed;
@@ -80,18 +78,15 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
     align-items:center;
     z-index:999;
 }
-
 .trailer-content {
     max-width:800px;
     width:90%;
     position:relative;
 }
-
 .trailer-content video {
     width:100%;
     border-radius:10px;
 }
-
 .close-btn {
     position:absolute;
     top:-40px;
@@ -137,8 +132,7 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 <h2>HOME SWEET HOME 1</h2>
 <p><strong>HOME SWEET HOME 1</strong> is our first major project — a psychological horror game set in a mysterious and abandoned orphanage. Players explore dark corridors, hidden rooms, and floors sealed for decades. The game mixes exploration, survival, and narrative-driven encounters.</p>
 
-<!-- 🔥 PRZYCISK -->
-<button class="watch-btn" onclick="openTrailer()">Watch Trailer</button>
+<button class="watch-btn" onclick="openTrailer()">Watch the Preview</button>
 
 <div class="block">
 <h3>Story & Setting</h3>
@@ -158,17 +152,16 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 </div>
 </div>
 
-<!-- 🎬 POPUP -->
+<!-- POPUP -->
 <div class="trailer-popup" id="trailerPopup">
     <div class="trailer-content">
         <span class="close-btn" onclick="closeTrailer()">✖</span>
         <video controls>
-            <source src="do-gry-to-lepsze.ogv" type="video/ogg">
+            <source src="trailer.mp4" type="video/mp4">
         </video>
     </div>
 </div>
 
-<!-- ⚡ JS -->
 <script>
 function openTrailer() {
     document.getElementById("trailerPopup").style.display = "flex";
