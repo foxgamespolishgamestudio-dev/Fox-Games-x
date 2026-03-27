@@ -50,6 +50,57 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 .block h3 { font-size:28px; margin-bottom:15px; color:#ff5555; }
 .block p { font-size:17px; line-height:1.8; color:#bbb; }
 
+/* 🎬 PRZYCISK TRAILERA */
+.watch-btn {
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+.watch-btn:hover {
+    background:#ff5555;
+}
+
+/* 🎬 POPUP */
+.trailer-popup {
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.trailer-content {
+    max-width:800px;
+    width:90%;
+    position:relative;
+}
+
+.trailer-content video {
+    width:100%;
+    border-radius:10px;
+}
+
+.close-btn {
+    position:absolute;
+    top:-40px;
+    right:0;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+
 /* RESPONSIVE */
 @media(max-width:768px){
 .navbar-inner { flex-direction:column; }
@@ -86,6 +137,9 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 <h2>HOME SWEET HOME 1</h2>
 <p><strong>HOME SWEET HOME 1</strong> is our first major project — a psychological horror game set in a mysterious and abandoned orphanage. Players explore dark corridors, hidden rooms, and floors sealed for decades. The game mixes exploration, survival, and narrative-driven encounters.</p>
 
+<!-- 🔥 PRZYCISK -->
+<button class="watch-btn" onclick="openTrailer()">Watch Trailer</button>
+
 <div class="block">
 <h3>Story & Setting</h3>
 <p>The orphanage was once a place of care and hope, but tragedy left a mark. Children started disappearing and strange events unfolded. Floors from <strong>-10 to -30</strong> were sealed. Rumors say something sinister still lurks there. The player uncovers the dark history, piece by piece, while trying to survive encounters with children who are no longer human.</p>
@@ -103,6 +157,27 @@ body { margin:0; font-family:'Space Grotesk', sans-serif; background:#0a0a0a; co
 <p>Currently in development, <strong>HOME SWEET HOME 1</strong> is being meticulously crafted to deliver a unique psychological horror experience. Fox Games is committed to quality and immersion, ensuring players will feel both tension and awe as they explore the orphanage’s dark secrets.</p>
 </div>
 </div>
+
+<!-- 🎬 POPUP -->
+<div class="trailer-popup" id="trailerPopup">
+    <div class="trailer-content">
+        <span class="close-btn" onclick="closeTrailer()">✖</span>
+        <video controls>
+            <source src="do-gry-to-lepsze.ogv" type="video/ogg">
+        </video>
+    </div>
+</div>
+
+<!-- ⚡ JS -->
+<script>
+function openTrailer() {
+    document.getElementById("trailerPopup").style.display = "flex";
+}
+
+function closeTrailer() {
+    document.getElementById("trailerPopup").style.display = "none";
+}
+</script>
 
 </body>
 </html>
